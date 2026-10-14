@@ -15,7 +15,7 @@ if [[ "${1:-}" == "smoke" ]]; then
   EXTRA=(--steps=200 --save_freq=100 --log_freq=20)
 else
   OUT=outputs/train/omx_act_strawberry_1013; JOB=act_strawberry_1013
-  EXTRA=(--steps=100000 --save_freq=10000)
+  EXTRA=(--steps=50000 --save_freq=10000)
 fi
 
 lerobot-train \
